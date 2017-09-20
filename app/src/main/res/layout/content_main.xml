@@ -45,6 +45,14 @@
             android:text="Portal do aluno" />
 
         <Button
+            android:id="@+id/btNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_comment_black_24dp"
+            android:onClick="notesSql"
+            android:text="Notes" />
+
+        <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

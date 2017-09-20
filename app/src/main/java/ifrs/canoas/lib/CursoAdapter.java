@@ -70,7 +70,7 @@ public class CursoAdapter extends BaseAdapter  {
 
         descricao.setText(finalDesc);
 
-        Button bt = (Button) layout.findViewById(R.id.courseCompleteDescriptionBT);
+        Button bt = (Button) layout.findViewById(R.id.btEditar);
 
         bt.setOnClickListener(
                 new View.OnClickListener() {

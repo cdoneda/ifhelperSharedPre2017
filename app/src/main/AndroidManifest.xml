@@ -61,6 +61,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ifrs.canoas.ifhelper.MainActivity" />
         </activity>
+        <activity
+            android:name=".portal.ListarNotesActivity"
+            android:label="Listar Notes"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ifrs.canoas.ifhelper.MainActivity" />
+        </activity>
+        <activity android:name=".NotesActivity"></activity>
     </application>
 
 </manifest>

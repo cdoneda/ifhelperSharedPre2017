@@ -9,8 +9,10 @@ import android.view.View;
 import ifrs.canoas.ifhelper.geral.CalculaFaltasActivity;
 import ifrs.canoas.ifhelper.geral.LoginActivity;
 import ifrs.canoas.ifhelper.portal.ListarCursoActivity;
+import ifrs.canoas.ifhelper.portal.ListarNotesActivity;
 import ifrs.canoas.lib.CONST;
 import ifrs.canoas.lib.SharedPreferenceHelper;
+import ifrs.canoas.model.Notes;
 
 //Selecione a aba de todo e resolva todos eles inclusive esse
 //TODO transformar essa tela no idioma Inglês e Português (caso não tenha feito) 0,5
@@ -43,6 +45,13 @@ public class MainActivity extends DefaultActivity {
 
     public void calendarioAcademico(View v){
         Intent objIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.canoas.ifrs.edu.br/site/midias/arquivos/2017625103324485calendario_academico_2017.pdf"));
+        startActivity(objIntent);
+    }
+
+    public void notesSql(View v){
+        Context contexto = getApplicationContext();
+        Intent objIntent = new Intent(contexto, ListarNotesActivity.class);
+
         startActivity(objIntent);
     }
 

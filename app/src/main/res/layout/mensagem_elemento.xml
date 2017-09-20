@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="none"
+        android:textColor="@android:color/holo_orange_dark"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -25,7 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="31dp"
-            android:paddingLeft="35dp" />
+            android:paddingLeft="35dp"
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/mensagemCompleteDescriptionBT"
