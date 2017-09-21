@@ -3,6 +3,7 @@ package ifrs.canoas.ifhelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -15,6 +16,8 @@ public class NotesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void cadastrar(View v){
@@ -26,5 +29,17 @@ public class NotesActivity extends AppCompatActivity {
         Notes n = new Notes(eTitle.getText().toString(),eText.getText().toString(),eDiscipline.getText().toString());
         n.insert(db);
         Log.d("LOG", n.getAll(db).toString());
+
+        finish();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
