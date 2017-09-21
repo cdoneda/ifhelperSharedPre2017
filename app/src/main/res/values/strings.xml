@@ -22,6 +22,8 @@
     <string name="title_activity_listar_curso">ListarCurso</string>
     <string name="meus_cursos">Meus cursos</string>
     <string name="mensagens">mensagens</string>
+    <string name="title_activity_float">FloatActivity</string>
+    <string name="title_activity_float2">Float2Activity</string>
 
     <!-- Strings related to login -->
 </resources>

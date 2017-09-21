@@ -70,7 +70,28 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ifrs.canoas.ifhelper.MainActivity" />
         </activity>
-        <activity android:name=".NotesActivity"></activity>
+        <activity
+            android:name=".NotesActivity"
+            android:label="New Notes"
+            android:parentActivityName=".portal.ListarNotesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ifrs.canoas.ifhelper.portal.ListarNotesActivity" />
+        </activity>
+        <activity
+            android:name=".FloatActivity"
+            android:label="@string/title_activity_float"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewNoteActivity"
+            android:label="New Note"
+            android:parentActivityName=".portal.ListarNotesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ifrs.canoas.ifhelper.portal.ListarNotesActivity" />
+        </activity>
     </application>
 
 </manifest>
